@@ -95,14 +95,23 @@ PODS:
   - GoogleUtilities/UserDefaults (7.1.0):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.5.0)
+  - InputBarAccessoryView (5.1.0):
+    - InputBarAccessoryView/Core (= 5.1.0)
+  - InputBarAccessoryView/Core (5.1.0)
   - IQKeyboardManagerSwift (6.3.0)
+  - JGProgressHUD (2.2)
   - leveldb-library (1.22)
+  - MessageKit (3.3.0):
+    - InputBarAccessoryView (~> 5.1.0)
   - nanopb (2.30906.0):
     - nanopb/decode (= 2.30906.0)
     - nanopb/encode (= 2.30906.0)
   - nanopb/decode (2.30906.0)
   - nanopb/encode (2.30906.0)
   - PromisesObjC (1.2.11)
+  - SDWebImage (5.11.0):
+    - SDWebImage/Core (= 5.11.0)
+  - SDWebImage/Core (5.11.0)
 
 DEPENDENCIES:
   - CountryPickerView
@@ -114,6 +123,9 @@ DEPENDENCIES:
   - Firebase/Messaging
   - Firebase/Storage
   - IQKeyboardManagerSwift (= 6.3.0)
+  - JGProgressHUD
+  - MessageKit
+  - SDWebImage
 
 SPEC REPOS:
   trunk:
@@ -132,10 +144,14 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleUtilities
     - GTMSessionFetcher
+    - InputBarAccessoryView
     - IQKeyboardManagerSwift
+    - JGProgressHUD
     - leveldb-library
+    - MessageKit
     - nanopb
     - PromisesObjC
+    - SDWebImage
 
 SPEC CHECKSUMS:
   CountryPickerView: 383c09949f7455de9892db7ce3400b10da090150
@@ -153,11 +169,15 @@ SPEC CHECKSUMS:
   GoogleDataTransport: e4085e6762f36a6141738f46b0153473ce57fb18
   GoogleUtilities: f734da554aade8cc7928a31c2f3311897933a1bd
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
+  InputBarAccessoryView: 19953f486a23e846e9487099f92bbe3456e46ce5
   IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
+  MessageKit: 1f07618183be6d92b648ba7a384aafa097362a00
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
+  SDWebImage: 7acbb57630ac7db4a495547fb73916ff3e432f6b
 
-PODFILE CHECKSUM: b7beb9607a7566113844d907efb0b2ea15d452a7
+PODFILE CHECKSUM: 54cee3620ed72cfe316383a207e5dc82bd819a7d
 
 COCOAPODS: 1.10.0

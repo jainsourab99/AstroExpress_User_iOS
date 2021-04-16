@@ -18,10 +18,10 @@ target 'Astrovedh' do
   pod 'Firebase/Auth'
 #  pod 'AWSAPIGateway', '~> 2.4.7'
 
-#pod 'MessageKit'
-#pod 'JGProgressHUD'
+pod 'MessageKit'
+pod 'JGProgressHUD'
 #pod 'RealmSwift'
-#pod 'SDWebImage'
+pod 'SDWebImage'
 
 
 end
