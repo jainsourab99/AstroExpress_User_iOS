@@ -1,0 +1,1454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ujN-Gs-7TZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome Screen View Controller-->
+        <scene sceneID="8WQ-xf-6OK">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeScreenViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ujN-Gs-7TZ" customClass="WelcomeScreenViewController" customModule="Astrovedh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vb4-EM-Z9P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5L-e1-6HV" userLabel="BodyLabel1">
+                                <rect key="frame" x="20" y="174" width="259.5" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ASTROVEDH" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbO-Hf-PmG" userLabel="BodyLabel2">
+                                <rect key="frame" x="20" y="234" width="286" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.68235294120000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore your" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNP-QO-ngb" userLabel="BodyLabel3">
+                                <rect key="frame" x="20" y="294" width="261.5" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FUTURE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTQ-dH-OEj" userLabel="BodyLabel4">
+                                <rect key="frame" x="20" y="354" width="191" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6Y-C7-8Es">
+                                <rect key="frame" x="20" y="717" width="374" height="45"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.68235294120000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="LOGIN/SIGNUP">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickloginBtn:" destination="ujN-Gs-7TZ" eventType="touchUpInside" id="ysT-WL-NbB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ubf-gR-U9Y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ubf-gR-U9Y" firstAttribute="bottom" secondItem="D6Y-C7-8Es" secondAttribute="bottom" constant="100" id="1Lo-xF-Rb1"/>
+                            <constraint firstItem="ubf-gR-U9Y" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vbO-Hf-PmG" secondAttribute="trailing" constant="50" id="3gO-ee-Jia"/>
+                            <constraint firstItem="vbO-Hf-PmG" firstAttribute="top" secondItem="b5L-e1-6HV" secondAttribute="bottom" id="5Dd-I4-knw"/>
+                            <constraint firstItem="BTQ-dH-OEj" firstAttribute="top" secondItem="tNP-QO-ngb" secondAttribute="bottom" id="5ev-e5-Hwn"/>
+                            <constraint firstItem="D6Y-C7-8Es" firstAttribute="leading" secondItem="ubf-gR-U9Y" secondAttribute="leading" constant="20" id="7Ik-m9-vFc"/>
+                            <constraint firstItem="ubf-gR-U9Y" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BTQ-dH-OEj" secondAttribute="trailing" constant="50" id="7mq-Ko-gU2"/>
+                            <constraint firstItem="tNP-QO-ngb" firstAttribute="leading" secondItem="vbO-Hf-PmG" secondAttribute="leading" id="8f8-dT-ix1"/>
+                            <constraint firstItem="ubf-gR-U9Y" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="b5L-e1-6HV" secondAttribute="trailing" constant="50" id="9V7-N1-nvk"/>
+                            <constraint firstItem="ubf-gR-U9Y" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tNP-QO-ngb" secondAttribute="trailing" constant="50" id="GnX-fc-Hqa"/>
+                            <constraint firstItem="D6Y-C7-8Es" firstAttribute="height" secondItem="Vb4-EM-Z9P" secondAttribute="height" multiplier="0.05" id="LYz-5e-aF2"/>
+                            <constraint firstItem="b5L-e1-6HV" firstAttribute="top" secondItem="ubf-gR-U9Y" secondAttribute="top" constant="130" id="Rzo-SM-P2t"/>
+                            <constraint firstItem="b5L-e1-6HV" firstAttribute="leading" secondItem="ubf-gR-U9Y" secondAttribute="leading" constant="20" id="d86-FA-SZu"/>
+                            <constraint firstItem="tNP-QO-ngb" firstAttribute="top" secondItem="vbO-Hf-PmG" secondAttribute="bottom" id="dGv-yK-Guu"/>
+                            <constraint firstItem="vbO-Hf-PmG" firstAttribute="leading" secondItem="b5L-e1-6HV" secondAttribute="leading" id="hgE-Cg-yr2"/>
+                            <constraint firstItem="BTQ-dH-OEj" firstAttribute="leading" secondItem="tNP-QO-ngb" secondAttribute="leading" id="pK3-Jf-THI"/>
+                            <constraint firstItem="ubf-gR-U9Y" firstAttribute="trailing" secondItem="D6Y-C7-8Es" secondAttribute="trailing" constant="20" id="yCZ-gm-69L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="D6Y-C7-8Es" id="gh2-F0-r78"/>
+                        <segue destination="7bV-O1-fGI" kind="show" identifier="welcomeScreenSeque" id="7cL-hq-T0S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bAf-aP-K7x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46" y="63"/>
+        </scene>
+        <!--Login Signup With Number View Controller-->
+        <scene sceneID="NuG-xR-x8V">
+            <objects>
+                <viewController storyboardIdentifier="LoginSignupViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1gL-dW-7oj" customClass="LoginSignupWithNumberViewController" customModule="Astrovedh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xHe-k0-H0K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WC9-qU-TiA" userLabel="Header View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="62.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xt7-jA-5fj" userLabel="Back Button">
+                                        <rect key="frame" x="20" y="20.5" width="33" height="22"/>
+                                        <state key="normal" image="headerback"/>
+                                        <connections>
+                                            <action selector="onClickBackBtn:" destination="1gL-dW-7oj" eventType="touchUpInside" id="cFo-bh-Hkv"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login / Signup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7e5-ZE-IVC">
+                                        <rect key="frame" x="73" y="18" width="135.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7e5-ZE-IVC" secondAttribute="trailing" constant="20" id="BtM-m2-2Ph"/>
+                                    <constraint firstItem="xt7-jA-5fj" firstAttribute="centerY" secondItem="WC9-qU-TiA" secondAttribute="centerY" id="Dt6-RX-DNk"/>
+                                    <constraint firstItem="7e5-ZE-IVC" firstAttribute="leading" secondItem="xt7-jA-5fj" secondAttribute="trailing" constant="20" id="ITD-fy-XYK"/>
+                                    <constraint firstItem="xt7-jA-5fj" firstAttribute="leading" secondItem="WC9-qU-TiA" secondAttribute="leading" constant="20" id="ZjR-Iw-kW3"/>
+                                    <constraint firstItem="7e5-ZE-IVC" firstAttribute="centerY" secondItem="xt7-jA-5fj" secondAttribute="centerY" id="b3t-fD-Spz"/>
+                                    <constraint firstItem="xt7-jA-5fj" firstAttribute="height" secondItem="WC9-qU-TiA" secondAttribute="height" multiplier="0.35" id="oTp-xo-38b"/>
+                                    <constraint firstItem="xt7-jA-5fj" firstAttribute="width" secondItem="WC9-qU-TiA" secondAttribute="width" multiplier="0.08" id="r9j-3d-wkS"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uU9-uP-AR1">
+                                <rect key="frame" x="20" y="136.5" width="116" height="50"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rQK-Yw-auH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter mobile number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dsp-40-yER">
+                                <rect key="frame" x="146" y="136.5" width="248" height="50"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZsT-wR-I4K">
+                                <rect key="frame" x="20" y="717" width="374" height="45"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.68235294120000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="LOGIN/SIGNUP">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickLoginBtnPressed:" destination="1gL-dW-7oj" eventType="touchUpInside" id="LVk-Cx-Off"/>
+                                    <action selector="onClickloginBtn:" destination="ujN-Gs-7TZ" eventType="touchUpInside" id="z4g-ti-E2t"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="619-L6-6Pp"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstItem="619-L6-6Pp" firstAttribute="trailing" secondItem="WC9-qU-TiA" secondAttribute="trailing" id="BZn-76-1lH"/>
+                            <constraint firstItem="dsp-40-yER" firstAttribute="height" secondItem="uU9-uP-AR1" secondAttribute="height" id="HKm-RQ-KxL"/>
+                            <constraint firstItem="dsp-40-yER" firstAttribute="centerY" secondItem="uU9-uP-AR1" secondAttribute="centerY" id="K9p-ZQ-rYR"/>
+                            <constraint firstItem="ZsT-wR-I4K" firstAttribute="leading" secondItem="619-L6-6Pp" secondAttribute="leading" constant="20" id="Lxx-7T-KaQ"/>
+                            <constraint firstItem="ZsT-wR-I4K" firstAttribute="height" secondItem="xHe-k0-H0K" secondAttribute="height" multiplier="0.05" id="PBN-1z-kmE"/>
+                            <constraint firstItem="WC9-qU-TiA" firstAttribute="height" secondItem="xHe-k0-H0K" secondAttribute="height" multiplier="0.07" id="UiV-MK-rFx"/>
+                            <constraint firstItem="uU9-uP-AR1" firstAttribute="top" secondItem="WC9-qU-TiA" secondAttribute="bottom" constant="30" id="X40-Bv-TpR"/>
+                            <constraint firstItem="uU9-uP-AR1" firstAttribute="leading" secondItem="619-L6-6Pp" secondAttribute="leading" constant="20" id="aXv-2n-e8c"/>
+                            <constraint firstItem="619-L6-6Pp" firstAttribute="bottom" secondItem="ZsT-wR-I4K" secondAttribute="bottom" constant="100" id="any-ag-AfV"/>
+                            <constraint firstItem="dsp-40-yER" firstAttribute="leading" secondItem="uU9-uP-AR1" secondAttribute="trailing" constant="10" id="eLV-k0-Qhn"/>
+                            <constraint firstItem="WC9-qU-TiA" firstAttribute="top" secondItem="619-L6-6Pp" secondAttribute="top" id="fMc-aw-3cR"/>
+                            <constraint firstItem="619-L6-6Pp" firstAttribute="trailing" secondItem="dsp-40-yER" secondAttribute="trailing" constant="20" id="mxb-KM-owp"/>
+                            <constraint firstItem="uU9-uP-AR1" firstAttribute="width" secondItem="xHe-k0-H0K" secondAttribute="width" multiplier="0.28" id="onL-Pc-dv0"/>
+                            <constraint firstItem="619-L6-6Pp" firstAttribute="trailing" secondItem="ZsT-wR-I4K" secondAttribute="trailing" constant="20" id="pfl-bv-KrX"/>
+                            <constraint firstItem="WC9-qU-TiA" firstAttribute="leading" secondItem="619-L6-6Pp" secondAttribute="leading" id="y5p-iF-Kkj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RiM-fY-3on">
+                        <barButtonItem key="backBarButtonItem" title="Login / Signup" id="90y-im-zoY"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backBtn" destination="xt7-jA-5fj" id="Tq8-c1-zaB"/>
+                        <outlet property="countryCodeTextField" destination="uU9-uP-AR1" id="wME-BO-hgu"/>
+                        <outlet property="loginSignupBtn" destination="ZsT-wR-I4K" id="6YU-xI-Mfu"/>
+                        <outlet property="mobileNumberTextField" destination="dsp-40-yER" id="dx4-JD-Vrq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bjA-Ox-y2M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="63"/>
+        </scene>
+        <!--Login With EmailVC-->
+        <scene sceneID="ovO-C8-LvK">
+            <objects>
+                <viewController storyboardIdentifier="LoginWithEmailVC" modalPresentationStyle="overFullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7jd-Mx-CF2" customClass="LoginWithEmailVC" customModule="Astrovedh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Sf-BQ-ZtW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u3p-Im-wqU" userLabel="Header View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="62.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3l-5u-hoK" userLabel="Back Button">
+                                        <rect key="frame" x="20" y="20.5" width="33" height="22"/>
+                                        <state key="normal" image="headerback"/>
+                                        <connections>
+                                            <action selector="onClickBackBtn:" destination="7jd-Mx-CF2" eventType="touchUpInside" id="ou6-VE-QfV"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login / Signup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7e7-Vm-xWw">
+                                        <rect key="frame" x="73" y="18" width="135.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="7e7-Vm-xWw" firstAttribute="centerY" secondItem="B3l-5u-hoK" secondAttribute="centerY" id="04l-b7-KEz"/>
+                                    <constraint firstItem="B3l-5u-hoK" firstAttribute="height" secondItem="u3p-Im-wqU" secondAttribute="height" multiplier="0.35" id="AkL-hD-dQW"/>
+                                    <constraint firstItem="B3l-5u-hoK" firstAttribute="centerY" secondItem="u3p-Im-wqU" secondAttribute="centerY" id="O6g-sz-ApV"/>
+                                    <constraint firstItem="7e7-Vm-xWw" firstAttribute="leading" secondItem="B3l-5u-hoK" secondAttribute="trailing" constant="20" id="VwD-L0-bY5"/>
+                                    <constraint firstItem="B3l-5u-hoK" firstAttribute="leading" secondItem="u3p-Im-wqU" secondAttribute="leading" constant="20" id="ow9-6c-Etk"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7e7-Vm-xWw" secondAttribute="trailing" constant="20" id="uDt-it-uAk"/>
+                                    <constraint firstItem="B3l-5u-hoK" firstAttribute="width" secondItem="u3p-Im-wqU" secondAttribute="width" multiplier="0.08" id="xuC-CW-aY8"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gqv-Fq-NVb">
+                                <rect key="frame" x="20" y="136.5" width="374" height="269"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qjX-fb-FAI" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="52.5"/>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1kq-pS-R6Q" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72.5" width="374" height="52"/>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="re-enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oKq-8g-Wok" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="144.5" width="374" height="52.5"/>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GY1-Qp-BAJ">
+                                        <rect key="frame" x="0.0" y="217" width="374" height="52"/>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="0.68235294120000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="LOGIN/SIGNUP">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onClickloginBtn:" destination="ujN-Gs-7TZ" eventType="touchUpInside" id="Eq0-rF-Aab"/>
+                                            <action selector="onClickloginBtn:" destination="7jd-Mx-CF2" eventType="touchUpInside" id="mj8-3w-cL8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WF3-c6-XxH"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gqv-Fq-NVb" firstAttribute="leading" secondItem="WF3-c6-XxH" secondAttribute="leading" constant="20" id="H9E-gY-TrC"/>
+                            <constraint firstItem="gqv-Fq-NVb" firstAttribute="top" secondItem="u3p-Im-wqU" secondAttribute="bottom" constant="30" id="KIc-so-7wY"/>
+                            <constraint firstItem="u3p-Im-wqU" firstAttribute="leading" secondItem="WF3-c6-XxH" secondAttribute="leading" id="XVg-GT-Xh4"/>
+                            <constraint firstItem="gqv-Fq-NVb" firstAttribute="height" secondItem="2Sf-BQ-ZtW" secondAttribute="height" multiplier="0.3" id="ZAb-5a-aNx"/>
+                            <constraint firstItem="WF3-c6-XxH" firstAttribute="trailing" secondItem="gqv-Fq-NVb" secondAttribute="trailing" constant="20" id="ay2-v9-q7g"/>
+                            <constraint firstItem="u3p-Im-wqU" firstAttribute="height" secondItem="2Sf-BQ-ZtW" secondAttribute="height" multiplier="0.07" id="p0s-5U-UDl"/>
+                            <constraint firstItem="WF3-c6-XxH" firstAttribute="trailing" secondItem="u3p-Im-wqU" secondAttribute="trailing" id="qx6-dR-udM"/>
+                            <constraint firstItem="u3p-Im-wqU" firstAttribute="top" secondItem="WF3-c6-XxH" secondAttribute="top" id="tHQ-gJ-KRN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jT4-jj-ZOF">
+                        <barButtonItem key="backBarButtonItem" title="Login / Signup" id="nqU-LD-2jS"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backBtn" destination="B3l-5u-hoK" id="RJT-st-8Jz"/>
+                        <outlet property="emailTextField" destination="qjX-fb-FAI" id="oxf-Zh-c9f"/>
+                        <outlet property="loginSignupBtn" destination="GY1-Qp-BAJ" id="0mN-Sd-d47"/>
+                        <outlet property="passwordTextField" destination="1kq-pS-R6Q" id="FGF-r4-HNX"/>
+                        <outlet property="reEnterPasswordTextField" destination="oKq-8g-Wok" id="xzM-nF-GVf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8G-j7-0VF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="726"/>
+        </scene>
+        <!--Varification View Controller-->
+        <scene sceneID="Bhf-UA-BJb">
+            <objects>
+                <viewController storyboardIdentifier="OTPVarificationViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tp4-wp-FM2" customClass="OTPVarificationViewController" customModule="Astrovedh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bdh-ml-y3v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tpO-aA-kdC" userLabel="Header View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="62.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4B-zd-4xc" userLabel="Back Button">
+                                        <rect key="frame" x="20" y="20.5" width="33" height="22"/>
+                                        <state key="normal" image="headerback"/>
+                                        <connections>
+                                            <action selector="onClickBackBtn:" destination="7jd-Mx-CF2" eventType="touchUpInside" id="8Oh-Qz-EWO"/>
+                                            <action selector="onClickBackBtn:" destination="Tp4-wp-FM2" eventType="touchUpInside" id="Gyo-Ug-iuG"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login / Signup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcP-aN-Pe0">
+                                        <rect key="frame" x="73" y="18" width="135.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="y4B-zd-4xc" firstAttribute="leading" secondItem="tpO-aA-kdC" secondAttribute="leading" constant="20" id="Oxs-Wk-W9M"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YcP-aN-Pe0" secondAttribute="trailing" constant="20" id="aP7-JX-AFo"/>
+                                    <constraint firstItem="y4B-zd-4xc" firstAttribute="width" secondItem="tpO-aA-kdC" secondAttribute="width" multiplier="0.08" id="bzk-h3-Fpb"/>
+                                    <constraint firstItem="YcP-aN-Pe0" firstAttribute="centerY" secondItem="y4B-zd-4xc" secondAttribute="centerY" id="g87-iV-TvB"/>
+                                    <constraint firstItem="YcP-aN-Pe0" firstAttribute="leading" secondItem="y4B-zd-4xc" secondAttribute="trailing" constant="20" id="l3A-46-yV8"/>
+                                    <constraint firstItem="y4B-zd-4xc" firstAttribute="height" secondItem="tpO-aA-kdC" secondAttribute="height" multiplier="0.35" id="roH-QV-IdE"/>
+                                    <constraint firstItem="y4B-zd-4xc" firstAttribute="centerY" secondItem="tpO-aA-kdC" secondAttribute="centerY" id="zOd-0P-8zB"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CRC-Lp-vkG">
+                                <rect key="frame" x="20" y="136.5" width="374" height="252"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter verification code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hD-cN-4bC">
+                                        <rect key="frame" x="20.5" y="0.0" width="333" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <color key="textColor" red="0.98039215690000003" green="0.68235294120000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="we have sent you a confirmation code on your email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWk-KS-m1W">
+                                        <rect key="frame" x="6.5" y="68" width="361.5" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8J-vO-zHb">
+                                        <rect key="frame" x="163" y="136" width="48" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        </variation>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h3h-xv-JS4" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                        <rect key="frame" x="63" y="204" width="248" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        </variation>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1c-rT-sRC">
+                                <rect key="frame" x="20" y="717" width="374" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickContinueBtn:" destination="Tp4-wp-FM2" eventType="touchUpInside" id="ijU-NT-z8B"/>
+                                    <action selector="onClickLoginBtnPressed:" destination="1gL-dW-7oj" eventType="touchUpInside" id="1aG-Gi-e7z"/>
+                                    <action selector="onClickloginBtn:" destination="ujN-Gs-7TZ" eventType="touchUpInside" id="Cho-8m-hr6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R1w-n3-T75"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CRC-Lp-vkG" secondAttribute="trailing" constant="20" id="9Hl-gY-BzH"/>
+                            <constraint firstItem="CRC-Lp-vkG" firstAttribute="top" secondItem="tpO-aA-kdC" secondAttribute="bottom" constant="30" id="BNu-JY-XGt"/>
+                            <constraint firstItem="T1c-rT-sRC" firstAttribute="height" secondItem="bdh-ml-y3v" secondAttribute="height" multiplier="0.05" id="BuD-Ff-gFL"/>
+                            <constraint firstItem="tpO-aA-kdC" firstAttribute="top" secondItem="R1w-n3-T75" secondAttribute="top" id="Jnh-BX-U5X"/>
+                            <constraint firstItem="CRC-Lp-vkG" firstAttribute="leading" secondItem="R1w-n3-T75" secondAttribute="leading" constant="20" id="Rdf-5P-a0G"/>
+                            <constraint firstItem="R1w-n3-T75" firstAttribute="trailing" secondItem="tpO-aA-kdC" secondAttribute="trailing" id="UDi-97-RCo"/>
+                            <constraint firstItem="tpO-aA-kdC" firstAttribute="height" secondItem="bdh-ml-y3v" secondAttribute="height" multiplier="0.07" id="YLI-vu-HAR"/>
+                            <constraint firstItem="R1w-n3-T75" firstAttribute="trailing" secondItem="T1c-rT-sRC" secondAttribute="trailing" constant="20" id="b4r-8M-5Ir"/>
+                            <constraint firstItem="R1w-n3-T75" firstAttribute="bottom" secondItem="T1c-rT-sRC" secondAttribute="bottom" constant="100" id="fkV-Zd-27K"/>
+                            <constraint firstItem="h3h-xv-JS4" firstAttribute="width" secondItem="bdh-ml-y3v" secondAttribute="width" multiplier="0.6" id="lgW-Ff-yiv"/>
+                            <constraint firstItem="tpO-aA-kdC" firstAttribute="leading" secondItem="bdh-ml-y3v" secondAttribute="leading" id="rbu-Uc-Ulp"/>
+                            <constraint firstItem="T1c-rT-sRC" firstAttribute="leading" secondItem="bdh-ml-y3v" secondAttribute="leading" constant="20" id="yGP-Py-Xh0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="W8J-vO-zHb" id="x9V-yD-Q4B"/>
+                        <outlet property="enterOTPTextField" destination="h3h-xv-JS4" id="PC7-3U-yd5"/>
+                        <outlet property="loginBtn" destination="T1c-rT-sRC" id="K1C-Yj-Ego"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A0G-bp-J9d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1523" y="726"/>
+        </scene>
+        <!--Registration Form View Controller-->
+        <scene sceneID="Bro-Ow-JFg">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationFormViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JLE-Zs-8SX" customClass="RegistrationFormViewController" customModule="Astrovedh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uUH-rO-lWu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hpb-J4-Ru7">
+                                <rect key="frame" x="0.0" y="106.5" width="414" height="755.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aTf-Yg-Tua">
+                                        <rect key="frame" x="20" y="10" width="374" height="1443"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8iR-cy-4uH" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Bif-lG-Mwj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pvz-36-nN0" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="60" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="VXD-bd-MF5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dub-Nv-vfY" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="120" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="spz-XU-tI8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ht-jp-0o1" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="180" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="mSz-Ui-JZ8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EYn-dw-hYy" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="240" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="0Ap-Qz-Qe3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Itj-LK-zSr" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="300" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="HTh-Dg-ZuM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n5e-bS-41g" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="360" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="OAq-gv-ABK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BNi-iJ-DA7" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="420" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="yhG-Ja-4Mb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BPu-Qe-zmb" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="480" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="MLA-HP-Mvl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kTS-TH-RP1" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="540" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="jZx-JX-3c3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wIq-lq-mVJ" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="600" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="cB0-1q-iNL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wJs-4l-QUO" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="660" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="jNM-ds-mK6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GVA-NN-d4T" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="720" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="edN-Ed-KAq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E5K-27-ZN7" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="780" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="JcU-gx-Zwa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tww-Jk-zzZ" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="840" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="cxo-RY-VCj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pIi-V8-Iju" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="900" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="3cg-Bw-GTh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="33M-7h-xSK" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="960" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Zbo-h8-nwD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J1v-1X-w83" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="1020" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="f6d-kz-WmE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cAv-f5-Y50" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="1080" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="KlD-ea-Nzk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="71A-40-jrn" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="1140" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="xgJ-h7-N1Q"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0sw-Fj-s1b" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="1200" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="iJN-hM-Tb5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U0q-fd-Zo4" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="1260" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="kha-UY-pwj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bGr-NG-qgf" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="1320" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="FQZ-sx-fwI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwF-lO-TPV">
+                                                <rect key="frame" x="0.0" y="1380" width="374" height="63"/>
+                                                <color key="backgroundColor" red="0.98039215690000003" green="0.68235294120000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Submit">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="onClickSubmitBtn:" destination="JLE-Zs-8SX" eventType="touchUpInside" id="Yqk-w1-kAC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="aTf-Yg-Tua" secondAttribute="trailing" constant="20" id="3A0-1y-YCL"/>
+                                    <constraint firstAttribute="bottom" secondItem="aTf-Yg-Tua" secondAttribute="bottom" constant="10" id="9NM-cM-z6X"/>
+                                    <constraint firstItem="aTf-Yg-Tua" firstAttribute="leading" secondItem="Hpb-J4-Ru7" secondAttribute="leading" constant="20" id="QeE-i9-Myi"/>
+                                    <constraint firstItem="aTf-Yg-Tua" firstAttribute="top" secondItem="Hpb-J4-Ru7" secondAttribute="top" constant="10" id="qVc-et-Cjd"/>
+                                    <constraint firstItem="aTf-Yg-Tua" firstAttribute="centerX" secondItem="Hpb-J4-Ru7" secondAttribute="centerX" id="tjz-SC-Rrc"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVB-zA-cv7" userLabel="Header View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="62.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6a-qn-NzM" userLabel="Back Button">
+                                        <rect key="frame" x="20" y="20.5" width="33" height="22"/>
+                                        <state key="normal" image="headerback"/>
+                                        <connections>
+                                            <action selector="onClickBackBtn:" destination="JLE-Zs-8SX" eventType="touchUpInside" id="mvL-lb-ZeN"/>
+                                            <action selector="onClickBackBtn:" destination="1gL-dW-7oj" eventType="touchUpInside" id="vTv-5e-g9D"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration Form" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31a-ef-mhp">
+                                        <rect key="frame" x="73" y="16.5" width="190" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.68235294120000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="N6a-qn-NzM" firstAttribute="height" secondItem="GVB-zA-cv7" secondAttribute="height" multiplier="0.35" id="KY1-OJ-lBu"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="31a-ef-mhp" secondAttribute="trailing" constant="20" id="MCc-QF-8jP"/>
+                                    <constraint firstItem="31a-ef-mhp" firstAttribute="centerY" secondItem="N6a-qn-NzM" secondAttribute="centerY" id="P2L-gK-oy7"/>
+                                    <constraint firstItem="N6a-qn-NzM" firstAttribute="width" secondItem="GVB-zA-cv7" secondAttribute="width" multiplier="0.08" id="b8H-zc-Dl5"/>
+                                    <constraint firstItem="31a-ef-mhp" firstAttribute="leading" secondItem="N6a-qn-NzM" secondAttribute="trailing" constant="20" id="dxV-0X-es7"/>
+                                    <constraint firstItem="N6a-qn-NzM" firstAttribute="leading" secondItem="GVB-zA-cv7" secondAttribute="leading" constant="20" id="nTz-Hl-6ja"/>
+                                    <constraint firstItem="N6a-qn-NzM" firstAttribute="centerY" secondItem="GVB-zA-cv7" secondAttribute="centerY" id="oC8-3d-7ES"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2oT-9e-Aw2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GVB-zA-cv7" firstAttribute="leading" secondItem="uUH-rO-lWu" secondAttribute="leading" id="K4N-aD-34K"/>
+                            <constraint firstItem="2oT-9e-Aw2" firstAttribute="bottom" secondItem="Hpb-J4-Ru7" secondAttribute="bottom" id="LYy-VW-b6f"/>
+                            <constraint firstItem="Hpb-J4-Ru7" firstAttribute="trailing" secondItem="2oT-9e-Aw2" secondAttribute="trailing" id="W7a-RP-asg"/>
+                            <constraint firstItem="GVB-zA-cv7" firstAttribute="height" secondItem="uUH-rO-lWu" secondAttribute="height" multiplier="0.07" id="cE9-KH-RwV"/>
+                            <constraint firstItem="Hpb-J4-Ru7" firstAttribute="leading" secondItem="2oT-9e-Aw2" secondAttribute="leading" id="gzI-mc-8X8"/>
+                            <constraint firstItem="Hpb-J4-Ru7" firstAttribute="top" secondItem="GVB-zA-cv7" secondAttribute="bottom" id="ikz-YZ-Yat"/>
+                            <constraint firstItem="bwF-lO-TPV" firstAttribute="height" secondItem="uUH-rO-lWu" secondAttribute="height" multiplier="0.07" id="p4c-72-sTC"/>
+                            <constraint firstItem="2oT-9e-Aw2" firstAttribute="trailing" secondItem="GVB-zA-cv7" secondAttribute="trailing" id="qJv-2P-2NE"/>
+                            <constraint firstItem="GVB-zA-cv7" firstAttribute="top" secondItem="2oT-9e-Aw2" secondAttribute="top" id="r0A-nD-2Q3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PANNoTextField" destination="J1v-1X-w83" id="JAD-s0-V9G"/>
+                        <outlet property="PhotoTextField" destination="cAv-f5-Y50" id="JaI-di-oq3"/>
+                        <outlet property="SubmitBtn" destination="bwF-lO-TPV" id="VBf-bA-EoC"/>
+                        <outlet property="accountDetailsTextField" destination="pIi-V8-Iju" id="7Fv-hl-Y1y"/>
+                        <outlet property="addressTextField" destination="Pvz-36-nN0" id="2hP-Vc-dhM"/>
+                        <outlet property="adhaarNumberTextField" destination="33M-7h-xSK" id="eIQ-Tu-aDr"/>
+                        <outlet property="anyOtherdegreeTextField" destination="BNi-iJ-DA7" id="whU-pN-nhM"/>
+                        <outlet property="bachlerordegreeTextField" destination="Itj-LK-zSr" id="tsl-Ye-39u"/>
+                        <outlet property="certificateTextField" destination="Tww-Jk-zzZ" id="aDC-bz-J0l"/>
+                        <outlet property="dobTextField" destination="EYn-dw-hYy" id="B1G-My-j7i"/>
+                        <outlet property="emailIdTextField" destination="BPu-Qe-zmb" id="7QB-Ao-erY"/>
+                        <outlet property="experienceTextField" destination="wIq-lq-mVJ" id="y0Y-fC-tKN"/>
+                        <outlet property="fatherNameTextField" destination="0sw-Fj-s1b" id="61a-fz-Zze"/>
+                        <outlet property="introVideoTextField" destination="U0q-fd-Zo4" id="Eic-dH-byg"/>
+                        <outlet property="landlineNumberTextField" destination="2Ht-jp-0o1" id="p3p-vD-n3M"/>
+                        <outlet property="languageKnownTextField" destination="71A-40-jrn" id="Wvc-ek-H2x"/>
+                        <outlet property="longBioTextField" destination="wJs-4l-QUO" id="QBl-Fh-aUb"/>
+                        <outlet property="masterdegreeTextField" destination="n5e-bS-41g" id="b1s-8l-xes"/>
+                        <outlet property="mobileNumberTextField" destination="dub-Nv-vfY" id="omC-LT-A3w"/>
+                        <outlet property="nameTextField" destination="8iR-cy-4uH" id="wd2-xN-3Yr"/>
+                        <outlet property="numberSpendTextField" destination="bGr-NG-qgf" id="8Cy-zq-BYy"/>
+                        <outlet property="shortBioTextField" destination="GVA-NN-d4T" id="Nr9-h2-NJL"/>
+                        <outlet property="skillsTextField" destination="kTS-TH-RP1" id="aPq-ul-hGI"/>
+                        <outlet property="workinganywereTextField" destination="E5K-27-ZN7" id="NU4-1Z-57U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IXc-jQ-Iba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1564" y="63"/>
+        </scene>
+        <!--AstroExpress-->
+        <scene sceneID="Gdz-b7-IOV">
+            <objects>
+                <viewController storyboardIdentifier="DashBoardViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Mv-7w-NS6" customClass="DashBoardViewController" customModule="Astrovedh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mhE-Uj-eGF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bkg-rY-Ymt">
+                                <rect key="frame" x="0.0" y="108" width="414" height="294.5"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.68235294120000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gX7-B0-J6c">
+                                <rect key="frame" x="0.0" y="402.5" width="414" height="356.5"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ioA-Mm-xuo">
+                                        <rect key="frame" x="10" y="10" width="394" height="346.5"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="20" id="9Lr-sD-g6Z">
+                                            <size key="itemSize" width="163" height="144"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DashBoardCollectionViewCell" id="ohc-fP-JA7" customClass="DashBoardCollectionViewCell" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="163" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="MXm-RX-Vff">
+                                                    <rect key="frame" x="0.0" y="0.0" width="163" height="144"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WnV-Np-PBw">
+                                                            <rect key="frame" x="51.5" y="20" width="60" height="60"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="60" id="gcV-Or-Ae8"/>
+                                                                <constraint firstAttribute="height" constant="60" id="wJ6-qT-bIQ"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3n-JE-1BF">
+                                                            <rect key="frame" x="20" y="90" width="123" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=compact-widthClass=compact">
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            </variation>
+                                                            <variation key="heightClass=regular-widthClass=compact">
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            </variation>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="e3n-JE-1BF" firstAttribute="leading" secondItem="MXm-RX-Vff" secondAttribute="leading" constant="20" id="2iG-Pb-XMu"/>
+                                                        <constraint firstItem="e3n-JE-1BF" firstAttribute="top" secondItem="WnV-Np-PBw" secondAttribute="bottom" constant="10" id="8V5-I4-e1j"/>
+                                                        <constraint firstAttribute="trailing" secondItem="e3n-JE-1BF" secondAttribute="trailing" constant="20" id="Hba-v4-IOF"/>
+                                                        <constraint firstItem="WnV-Np-PBw" firstAttribute="top" secondItem="MXm-RX-Vff" secondAttribute="top" constant="20" id="XjW-F2-WsV"/>
+                                                        <constraint firstItem="e3n-JE-1BF" firstAttribute="centerX" secondItem="WnV-Np-PBw" secondAttribute="centerX" id="jQz-3o-vSb"/>
+                                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="e3n-JE-1BF" secondAttribute="bottom" constant="5" id="obM-82-CEb"/>
+                                                        <constraint firstItem="WnV-Np-PBw" firstAttribute="centerX" secondItem="MXm-RX-Vff" secondAttribute="centerX" id="pCk-pd-zbm"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <size key="customSize" width="163" height="144"/>
+                                                <connections>
+                                                    <outlet property="cellImage" destination="WnV-Np-PBw" id="PJs-XH-Jks"/>
+                                                    <outlet property="cellLabel" destination="e3n-JE-1BF" id="ghz-AN-oUJ"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="6Mv-7w-NS6" id="VGe-Vh-Rog"/>
+                                            <outlet property="delegate" destination="6Mv-7w-NS6" id="HhT-7z-WPN"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ioA-Mm-xuo" secondAttribute="trailing" constant="10" id="4KS-xg-r6I"/>
+                                    <constraint firstItem="ioA-Mm-xuo" firstAttribute="top" secondItem="gX7-B0-J6c" secondAttribute="top" constant="10" id="fjO-6V-WYR"/>
+                                    <constraint firstItem="ioA-Mm-xuo" firstAttribute="leading" secondItem="gX7-B0-J6c" secondAttribute="leading" constant="10" id="hal-TZ-cYk"/>
+                                    <constraint firstAttribute="bottom" secondItem="ioA-Mm-xuo" secondAttribute="bottom" id="xEX-Dh-GnA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HQO-Vo-c9f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gX7-B0-J6c" firstAttribute="top" secondItem="Bkg-rY-Ymt" secondAttribute="bottom" id="9Ww-aC-JVL"/>
+                            <constraint firstItem="gX7-B0-J6c" firstAttribute="leading" secondItem="HQO-Vo-c9f" secondAttribute="leading" id="K1X-dm-XaQ"/>
+                            <constraint firstItem="Bkg-rY-Ymt" firstAttribute="leading" secondItem="HQO-Vo-c9f" secondAttribute="leading" id="XVC-BX-bfc"/>
+                            <constraint firstItem="HQO-Vo-c9f" firstAttribute="trailing" secondItem="Bkg-rY-Ymt" secondAttribute="trailing" id="dz4-EB-0pD"/>
+                            <constraint firstItem="HQO-Vo-c9f" firstAttribute="trailing" secondItem="gX7-B0-J6c" secondAttribute="trailing" id="jmb-aX-fAh"/>
+                            <constraint firstItem="Bkg-rY-Ymt" firstAttribute="height" secondItem="mhE-Uj-eGF" secondAttribute="height" multiplier="0.35" id="kYd-iY-Rqd"/>
+                            <constraint firstItem="Bkg-rY-Ymt" firstAttribute="top" secondItem="HQO-Vo-c9f" secondAttribute="top" id="mQC-xh-M2x"/>
+                            <constraint firstItem="HQO-Vo-c9f" firstAttribute="bottom" secondItem="gX7-B0-J6c" secondAttribute="bottom" id="vSV-TP-jPp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="AstroExpress" largeTitleDisplayMode="always" id="cHZ-bw-yV3"/>
+                    <connections>
+                        <outlet property="displayCollectionView" destination="ioA-Mm-xuo" id="gee-xM-bW4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kOj-7z-oS2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5376.811594202899" y="38.839285714285715"/>
+        </scene>
+        <!--Wallet-->
+        <scene sceneID="frU-gE-KQe">
+            <objects>
+                <viewController storyboardIdentifier="WalletsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Frn-4V-5H8" customClass="WalletsViewController" customModule="Astrovedh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uPA-nV-2Ki">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet Balance" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4so-uq-MYq">
+                                <rect key="frame" x="30" y="158" width="354" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bse-Ci-a0v">
+                                <rect key="frame" x="30" y="244" width="354" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDX-aN-YMI">
+                                <rect key="frame" x="20" y="670" width="374" height="39"/>
+                                <state key="normal" title="RECHARGE">
+                                    <color key="titleColor" name="label"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T8S-MT-3Ky"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bse-Ci-a0v" firstAttribute="top" secondItem="4so-uq-MYq" secondAttribute="bottom" constant="50" id="5Z9-n8-nhm"/>
+                            <constraint firstItem="bse-Ci-a0v" firstAttribute="leading" secondItem="4so-uq-MYq" secondAttribute="leading" id="5ZR-mc-b16"/>
+                            <constraint firstItem="cDX-aN-YMI" firstAttribute="leading" secondItem="T8S-MT-3Ky" secondAttribute="leading" constant="20" id="Flg-dc-iJv"/>
+                            <constraint firstItem="4so-uq-MYq" firstAttribute="top" secondItem="T8S-MT-3Ky" secondAttribute="top" constant="50" id="G9h-Aa-gSp"/>
+                            <constraint firstItem="T8S-MT-3Ky" firstAttribute="trailing" secondItem="4so-uq-MYq" secondAttribute="trailing" constant="30" id="Ic5-hJ-nCm"/>
+                            <constraint firstItem="T8S-MT-3Ky" firstAttribute="bottom" secondItem="cDX-aN-YMI" secondAttribute="bottom" constant="50" id="OVi-c0-Xl5"/>
+                            <constraint firstItem="bse-Ci-a0v" firstAttribute="trailing" secondItem="4so-uq-MYq" secondAttribute="trailing" id="RYc-m1-LPR"/>
+                            <constraint firstItem="4so-uq-MYq" firstAttribute="leading" secondItem="T8S-MT-3Ky" secondAttribute="leading" constant="30" id="hx2-H0-liu"/>
+                            <constraint firstItem="bse-Ci-a0v" firstAttribute="centerX" secondItem="4so-uq-MYq" secondAttribute="centerX" id="oO5-f4-OYH"/>
+                            <constraint firstItem="T8S-MT-3Ky" firstAttribute="trailing" secondItem="cDX-aN-YMI" secondAttribute="trailing" constant="20" id="vkP-tR-QzR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Wallet" id="q34-1y-5Ot"/>
+                    <connections>
+                        <outlet property="headerLabel" destination="4so-uq-MYq" id="lfE-UG-hCa"/>
+                        <outlet property="rechargeBtn" destination="cDX-aN-YMI" id="AIB-gX-tPr"/>
+                        <outlet property="rechargeLabel" destination="bse-Ci-a0v" id="hBt-Po-dJn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TTJ-bq-hMp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7402.898550724638" y="62.946428571428569"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="0Fh-Ca-m7m">
+            <objects>
+                <viewController id="g40-KZ-syK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cGk-EE-56E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5VR-9i-hsy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="gRf-nT-bfI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPd-uM-Q9Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8313.04347826087" y="776.78571428571422"/>
+        </scene>
+        <!--Edit Profile-->
+        <scene sceneID="dg6-dr-AvR">
+            <objects>
+                <viewController storyboardIdentifier="EditProfileViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bOJ-Ao-2lN" customClass="EditProfileViewController" customModule="Astrovedh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VgQ-8d-o4G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lcr-Uq-rtt">
+                                <rect key="frame" x="0.0" y="108" width="414" height="651"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Xha-c4-egA">
+                                        <rect key="frame" x="20" y="10" width="374" height="440.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c4g-nn-MEg" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="1Ef-rT-EXj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UM6-E0-02e" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="65" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="K56-T8-nj8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f9z-Fq-1ts" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="130" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="65i-Wo-uXq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DOB- dd/MM/yyyy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gpA-zc-FaV" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="195" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="fbd-1k-PgA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OsD-bZ-9bM" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="260" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ugv-fN-NgE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Place of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AIF-jK-X5h" customClass="MsgTextField" customModule="Astrovedh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="325" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ugC-qk-tYS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XrI-FH-aaZ">
+                                                <rect key="frame" x="0.0" y="390" width="374" height="50.5"/>
+                                                <color key="backgroundColor" red="0.98039215690000003" green="0.68235294120000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="SAVE DETAILS">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                </variation>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Xha-c4-egA" secondAttribute="bottom" constant="10" id="GKp-dp-vnI"/>
+                                    <constraint firstItem="Xha-c4-egA" firstAttribute="leading" secondItem="Lcr-Uq-rtt" secondAttribute="leading" constant="20" id="QFI-6y-bCQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xha-c4-egA" secondAttribute="trailing" constant="20" id="dJe-z8-vHO"/>
+                                    <constraint firstItem="Xha-c4-egA" firstAttribute="centerX" secondItem="Lcr-Uq-rtt" secondAttribute="centerX" id="j4G-g7-LBL"/>
+                                    <constraint firstItem="Xha-c4-egA" firstAttribute="top" secondItem="Lcr-Uq-rtt" secondAttribute="top" constant="10" id="jT4-KU-MHU"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dt2-hi-Lhs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XrI-FH-aaZ" firstAttribute="height" secondItem="VgQ-8d-o4G" secondAttribute="height" multiplier="0.06" id="5yX-HR-YxN"/>
+                            <constraint firstItem="Dt2-hi-Lhs" firstAttribute="trailing" secondItem="Lcr-Uq-rtt" secondAttribute="trailing" id="YhM-CL-knF"/>
+                            <constraint firstItem="Lcr-Uq-rtt" firstAttribute="top" secondItem="Dt2-hi-Lhs" secondAttribute="top" id="oaI-XU-SKh"/>
+                            <constraint firstItem="Dt2-hi-Lhs" firstAttribute="bottom" secondItem="Lcr-Uq-rtt" secondAttribute="bottom" id="woe-Fq-5Ur"/>
+                            <constraint firstItem="Lcr-Uq-rtt" firstAttribute="leading" secondItem="VgQ-8d-o4G" secondAttribute="leading" id="yXZ-6D-jWc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Profile" largeTitleDisplayMode="always" id="DTG-wC-dug"/>
+                    <connections>
+                        <outlet property="BirthPlaceTextField" destination="AIF-jK-X5h" id="sbT-Nl-jrM"/>
+                        <outlet property="birthTimeTextField" destination="OsD-bZ-9bM" id="Gzc-57-JWC"/>
+                        <outlet property="dobTextField" destination="gpA-zc-FaV" id="eoh-H4-fnb"/>
+                        <outlet property="genderTextField" destination="f9z-Fq-1ts" id="8J4-dx-Jvu"/>
+                        <outlet property="nameTextField" destination="c4g-nn-MEg" id="7C9-lF-Ddf"/>
+                        <outlet property="phoneTextField" destination="UM6-E0-02e" id="7sI-1p-73D"/>
+                        <outlet property="saveDetailsBtn" destination="XrI-FH-aaZ" id="9lV-Nv-cBp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cpW-dp-hd5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5376.811594202899" y="744.64285714285711"/>
+        </scene>
+        <!--Chats-->
+        <scene sceneID="cwW-g4-aEb">
+            <objects>
+                <viewController storyboardIdentifier="ConversationsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6hj-r5-whK" customClass="ConversationsViewController" customModule="Astrovedh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Ss-y4-6rc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vwF-qQ-vsy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chats" id="YEg-dG-rLb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qwo-jA-1KY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3449" y="745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EXd-VJ-lkb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eHN-5c-GJT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="23Q-zF-ZLO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6hj-r5-whK" kind="relationship" relationship="rootViewController" id="Z58-5C-LlU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQ2-aa-JG5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2506" y="745"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Kuy-QP-fbH">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="7bV-O1-fGI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Ejz-2N-0XI"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Kh-EE-aze">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="otd-LF-V7J" kind="relationship" relationship="viewControllers" id="shc-cY-OZB"/>
+                        <segue destination="H71-lP-PYv" kind="relationship" relationship="viewControllers" id="mYX-zv-Kio"/>
+                        <segue destination="9Ux-AZ-Oji" kind="relationship" relationship="viewControllers" id="AmY-BR-4l7"/>
+                        <segue destination="qr9-y5-t1t" kind="relationship" relationship="viewControllers" id="w9H-3i-dWT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcg-GT-6ja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3556.521739130435" y="38.839285714285715"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="3ww-aQ-cOF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="otd-LF-V7J" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="5Cc-9C-RO2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="fwA-3N-Z3F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.68235294120000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6Mv-7w-NS6" kind="relationship" relationship="rootViewController" id="mm7-xm-Rs2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pR5-cg-ysN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4466.666666666667" y="38.839285714285715"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="LSF-Qe-Fre">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H71-lP-PYv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.circle" catalog="system" selectedImage="person.circle" id="9Z3-wB-77b"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="1B9-xh-xbG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.68235294120000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bOJ-Ao-2lN" kind="relationship" relationship="rootViewController" id="Sz0-Ga-i5S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mYn-QH-RAe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4466.666666666667" y="744.64285714285711"/>
+        </scene>
+        <!--Wallet-->
+        <scene sceneID="L0J-Mz-GtU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Ux-AZ-Oji" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Wallet" image="wallet.pass.fill" catalog="system" selectedImage="wallet.pass.fill" id="JlT-Cn-Hg6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="sFb-ZD-9CU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.68235294120000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Frn-4V-5H8" kind="relationship" relationship="rootViewController" id="UVU-gb-Jec"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Up-jN-Nvz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6492.753623188406" y="62.946428571428569"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="5fN-pX-lJT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qr9-y5-t1t" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="circle.dashed.inset.fill" catalog="system" selectedImage="circle.dashed.inset.fill" id="fo4-NJ-EIS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="C9X-rA-Th5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.68235294120000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="g40-KZ-syK" kind="relationship" relationship="rootViewController" id="rmE-B6-RLG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lHh-Ko-jBb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7402.898550724638" y="776.78571428571422"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="0sw-Fj-s1b">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="1kq-pS-R6Q">
+            <size key="intrinsicContentSize" width="91" height="24"/>
+        </designable>
+        <designable name="2Ht-jp-0o1">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="33M-7h-xSK">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="71A-40-jrn">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="8iR-cy-4uH">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="AIF-jK-X5h">
+            <size key="intrinsicContentSize" width="136" height="34"/>
+        </designable>
+        <designable name="BNi-iJ-DA7">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="BPu-Qe-zmb">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="E5K-27-ZN7">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="EYn-dw-hYy">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="GVA-NN-d4T">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="Itj-LK-zSr">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="J1v-1X-w83">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="OsD-bZ-9bM">
+            <size key="intrinsicContentSize" width="132" height="34"/>
+        </designable>
+        <designable name="Pvz-36-nN0">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="Tww-Jk-zzZ">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="U0q-fd-Zo4">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="UM6-E0-02e">
+            <size key="intrinsicContentSize" width="151" height="34"/>
+        </designable>
+        <designable name="bGr-NG-qgf">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="c4g-nn-MEg">
+            <size key="intrinsicContentSize" width="123.5" height="34"/>
+        </designable>
+        <designable name="cAv-f5-Y50">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="dub-Nv-vfY">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="f9z-Fq-1ts">
+            <size key="intrinsicContentSize" width="90.5" height="34"/>
+        </designable>
+        <designable name="gpA-zc-FaV">
+            <size key="intrinsicContentSize" width="175" height="34"/>
+        </designable>
+        <designable name="h3h-xv-JS4">
+            <size key="intrinsicContentSize" width="40" height="38.5"/>
+        </designable>
+        <designable name="kTS-TH-RP1">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="n5e-bS-41g">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="oKq-8g-Wok">
+            <size key="intrinsicContentSize" width="167" height="24"/>
+        </designable>
+        <designable name="pIi-V8-Iju">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="qjX-fb-FAI">
+            <size key="intrinsicContentSize" width="52.5" height="25.5"/>
+        </designable>
+        <designable name="wIq-lq-mVJ">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+        <designable name="wJs-4l-QUO">
+            <size key="intrinsicContentSize" width="39" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="circle.dashed.inset.fill" catalog="system" width="128" height="121"/>
+        <image name="headerback" width="137" height="103"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="wallet.pass.fill" catalog="system" width="115" height="128"/>
+        <namedColor name="label">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
